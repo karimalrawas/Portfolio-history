@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>News Site</title>
+  <title>Ancient Egypt News</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <header>
-    <h1>News Site</h1>
+    <h1>Ancient Egypt News</h1>
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
@@ -19,6 +19,12 @@
   <section>
     <h2>Latest News</h2>
     <!-- Display news articles here -->
+    {% for article in articles %}
+    <div class="news-article">
+      <h3>{{ article.title }}</h3>
+      <p>{{ article.content }}</p>
+    </div>
+    {% endfor %}
   </section>
   
   <section>
@@ -27,7 +33,7 @@
   </section>
   
   <footer>
-    &copy; 2023 News Site
+    &copy; 2023 Ancient Egypt News
   </footer>
 </body>
 </html>

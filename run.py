@@ -7,9 +7,8 @@ app = Flask(__name__)
 def index():
     # Fetch and pass news articles to the template
     news_articles = [
-        {'title': 'News Article 1', 'content': 'Lorem ipsum dolor sit amet.'},
-        {'title': 'News Article 2', 'content': 'Consectetur adipiscing elit.'},
-        {'title': 'News Article 3', 'content': 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
+        {'title': 'The Great Pyramid of Giza', 'content': 'The Great Pyramid of Giza is the oldest and largest of the three pyramids in the Giza pyramid complex.'},
+        {'title': 'The Sphinx', 'content': 'The Sphinx is a mythical creature with the body of a lion and the head of a human or animal. It is believed to represent royal power and protection.'}
     ]
     return render_template('index.html', articles=news_articles)
 
