@@ -13,6 +13,7 @@
   <section>
     <h2>Sign Up</h2>
     <form method="POST" action="/signup">
+      {% csrf_token %}
       <input type="text" name="username" placeholder="Username">
       <input type="password" name="password" placeholder="Password">
       <button type="submit">Sign Up</button>
